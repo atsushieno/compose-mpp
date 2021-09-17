@@ -1,0 +1,11 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:dev.atsushieno.composempp.material////PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/index.html
+$dokka.location:dev.atsushieno.composempp.material//AlertDialog/#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]#androidx.compose.ui.Modifier#kotlin.Function0[kotlin.Unit]?#kotlin.Function0[kotlin.Unit]?#androidx.compose.ui.graphics.Shape#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color/PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-alert-dialog.html
+$dokka.location:dev.atsushieno.composempp.material//AlertDialog/#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]#androidx.compose.ui.Modifier#kotlin.Function0[kotlin.Unit]?#kotlin.Function0[kotlin.Unit]?#kotlin.Function0[kotlin.Unit]?#androidx.compose.ui.graphics.Shape#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color/PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-alert-dialog.html
+$dokka.location:dev.atsushieno.composempp.material//DropdownMenu/#kotlin.Boolean#kotlin.Function0[kotlin.Unit]#androidx.compose.ui.Modifier#androidx.compose.ui.unit.DpOffset#dev.atsushieno.composempp.material.PopupProperties#kotlin.Function1[androidx.compose.foundation.layout.ColumnScope,kotlin.Unit]/PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-dropdown-menu.html
+$dokka.location:dev.atsushieno.composempp.material/PopupProperties///PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-popup-properties/index.html
+$dokka.location:dev.atsushieno.composempp.material/PopupProperties/PopupProperties/#kotlin.Boolean/PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-popup-properties/-popup-properties.html
+$dokka.location:dev.atsushieno.composempp.material/PopupProperties/focusable/#/PointingToDeclaration/compose-mpp/dev.atsushieno.composempp.material/-popup-properties/focusable.html
+dev.atsushieno.composempp.material
+

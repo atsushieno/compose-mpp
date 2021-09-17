@@ -1,4 +1,4 @@
-package dev.atsushieno.android
+package dev.atsushieno.composempp.samples.alertdialog.androidapp
 
 import dev.atsushieno.common.App
 import android.os.Bundle

@@ -18,5 +18,6 @@ fun App() {
     Button(onClick = { dialogState = true }) { Text("Show Dialog") }
     if (dialogState)
         AlertDialog(onDismissRequest = { dialogState = false },
-            confirmButton = { Button(onClick = { dialogState = false }) { Text("OK" )} }, text = { Text("message") })
+            confirmButton = { Button(onClick = { dialogState = false }) { Text("OK" )} },
+            text = { Text("message") },)
 }

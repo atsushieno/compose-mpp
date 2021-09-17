@@ -11,3 +11,6 @@ rootProject.name = "compose-mpp"
 
 
 include(":compose-mpp")
+include(":samples:AlertDialog:common")
+include(":samples:AlertDialog:android")
+include(":samples:AlertDialog:desktop")

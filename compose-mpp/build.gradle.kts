@@ -85,7 +85,7 @@ afterEvaluate {
                 licenses {
                     license {
                         name.set("Apache V2 License")
-                        url.set("https://github.com/atsushieno/compose-mpp/blob/main/LICENSE")
+                        url.set("https://github.com/atsushieno/compose-mpp/blob/main/LICENSE.txt")
                     }
                 }
                 developers {
@@ -113,3 +113,4 @@ afterEvaluate {
     // keep it as is. It is replaced by CI release builds
     signing {}
 }
+

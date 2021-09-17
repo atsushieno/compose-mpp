@@ -15,15 +15,15 @@ Short answer: no.
 
 A bit more details: Android Jetpack Compose provides the Android implementation, and JetBrains provides the Desktop implementation. But they are incompatible. So if we'd like to write the same code in `commonMain`, we have to create by our own.
 
-Full details: Okay, it's quite a lot of source code that you might want to skip to the next section, but anyways. Here are how `AlertDialog()` composables are defined on each platform:
+Full details: Okay, it's quite a lot of source code that you might want to skip to the next section, but anyways. Here are how `AlertDialog()` composables are defined on each platform ([Android](https://github.com/androidx/androidx/blob/androidx-main/compose/material/material/src/androidMain/kotlin/androidx/compose/material/AndroidAlertDialog.android.kt), [Desktop](https://github.com/androidx/androidx/blob/androidx-main/compose/material/material/src/desktopMain/kotlin/androidx/compose/material/DesktopAlertDialog.desktop.kt)):
 
 <table>
 <tr>
-<th>[Android](https://github.com/androidx/androidx/blob/androidx-main/compose/material/material/src/androidMain/kotlin/androidx/compose/material/AndroidAlertDialog.android.kt)</th>
-<th>[Desktop](https://github.com/androidx/androidx/blob/androidx-main/compose/material/material/src/desktopMain/kotlin/androidx/compose/material/DesktopAlertDialog.desktop.kt)</th>
+<th>Android</th><th>Desktop</th>
 </tr>
 <tr>
 <td>
+    
 ```
 @Composable
 fun AlertDialog(
@@ -52,7 +52,9 @@ fun AlertDialog(
     properties: DialogProperties = DialogProperties()
 )
 ```
+
 </td><td>
+
 ```
 @Composable
 @ExperimentalMaterialApi
@@ -83,6 +85,7 @@ fun AlertDialog(
     dialogProvider: AlertDialogProvider = PopupAlertDialogProvider
 )
 ```
+
 </td>
 </tr>
 </table>
@@ -135,7 +138,7 @@ object PopupAlertDialogProvider : AlertDialogProvider {
 }
 ```
 
-They are however the details in the optional argument for each platform.
+They are however only the details in the optional argument for each platform that we would quite often like to skip.
 
 `DropdownMenu` is under similar status, but I would not focus on it now. You can investigate it by yourselves.
 
@@ -164,7 +167,7 @@ The API is so far almost identical to Jetpack Compose, except that you have to c
 Here is the `build.gradle.kts` (or `build.gradle`) change to make (most likely within `kotlin { soruceSets { val commonMain by getting { dependencies { ... } } } }` section):
 
 ```
-   implementation("dev.atsushieno:compose-mpp:+") // replace with specific version
+implementation("dev.atsushieno:compose-mpp:+") // replace with specific version
 ```
 
 The undocumented API reference is available at: https://atsushieno.github.io/compose-mpp/

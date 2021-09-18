@@ -7,10 +7,6 @@ plugins {
 group = "dev.atsushieno"
 version = "1.0"
 
-repositories {
-    jcenter()
-}
-
 dependencies {
     implementation(project(":samples:AlertDialog:common"))
     implementation("androidx.activity:activity-compose:1.3.1")

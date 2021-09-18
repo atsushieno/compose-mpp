@@ -7,14 +7,11 @@ import androidx.compose.ui.unit.DpOffset
 
 @Suppress("ModifierParameter")
 @Composable
-actual fun DropdownMenu(
+actual fun DropdownMenuEx(
     expanded: Boolean,
     onDismissRequest: () -> Unit,
     modifier: Modifier,
     offset: DpOffset,
     properties: PopupProperties,
     content: @Composable ColumnScope.() -> Unit
-) {
-    androidx.compose.material.DropdownMenu(expanded, onDismissRequest, modifier, offset,
-        androidx.compose.ui.window.PopupProperties(properties.focusable), content)
-}
+) = androidx.compose.material.DropdownMenu(expanded, onDismissRequest, properties.focusable, modifier, offset, content = content)

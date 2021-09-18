@@ -17,12 +17,12 @@ import androidx.compose.ui.graphics.Shape
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun AlertDialog(
-    onDismissRequest: (() -> Unit),
-    confirmButton: @Composable (() -> Unit),
+    onDismissRequest: () -> Unit,
+    confirmButton: @Composable () -> Unit,
     modifier: Modifier = Modifier,
-    dismissButton: @Composable (() -> Unit) = {},
-    title: @Composable (() -> Unit) = {},
-    text: @Composable (() -> Unit) = {},
+    dismissButton: @Composable (() -> Unit)? = null,
+    title: @Composable (() -> Unit)? = null,
+    text: @Composable (() -> Unit)? = null,
     shape: Shape = MaterialTheme.shapes.medium,
     backgroundColor: Color = MaterialTheme.colors.surface,
     contentColor: Color = contentColorFor(backgroundColor)
@@ -31,19 +31,18 @@ fun AlertDialog(
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun AlertDialog(
-    // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
-    onDismissRequest: (() -> Unit),
-    buttons: @Composable (() -> Unit),
+    onDismissRequest: () -> Unit,
+    buttons: @Composable () -> Unit,
     modifier: Modifier = Modifier,
-    title: (@Composable () -> Unit),
-    text: @Composable (() -> Unit),
+    title: (@Composable () -> Unit)? = null,
+    text: @Composable (() -> Unit)? = null,
     shape: Shape = MaterialTheme.shapes.medium,
     backgroundColor: Color = MaterialTheme.colors.surface,
     contentColor: Color = contentColorFor(backgroundColor)
 ) = AlertDialogEx(onDismissRequest, buttons, modifier, title, text, shape, backgroundColor, contentColor)
 
 @Composable
-expect fun AlertDialogEx(
+internal expect fun AlertDialogEx(
     // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
     onDismissRequest: (() -> Unit)?,
     confirmButton: @Composable (() -> Unit)?,
@@ -57,7 +56,7 @@ expect fun AlertDialogEx(
 )
 
 @Composable
-expect fun AlertDialogEx(
+internal expect fun AlertDialogEx(
     // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
     onDismissRequest: (() -> Unit)?,
     buttons: @Composable (() -> Unit)?,

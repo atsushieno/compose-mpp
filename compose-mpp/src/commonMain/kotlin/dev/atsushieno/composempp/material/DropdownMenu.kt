@@ -19,7 +19,7 @@ fun DropdownMenu(
 
 @Suppress("ModifierParameter")
 @Composable
-expect fun DropdownMenuEx(
+internal expect fun DropdownMenuEx(
     expanded: Boolean,
     onDismissRequest: () -> Unit,
     modifier: Modifier,

@@ -9,7 +9,7 @@ import androidx.compose.ui.graphics.Shape
 
 @Composable
 @ExperimentalMaterialApi
-actual fun AlertDialogEx(
+internal actual fun AlertDialogEx(
     // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
     onDismissRequest: (() -> Unit)?,
     confirmButton: @Composable (() -> Unit)?,
@@ -27,7 +27,7 @@ actual fun AlertDialogEx(
 
 @Composable
 @ExperimentalMaterialApi
-actual fun AlertDialogEx(
+internal actual fun AlertDialogEx(
     // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
     onDismissRequest: (() -> Unit)?,
     buttons: @Composable (() -> Unit)?,

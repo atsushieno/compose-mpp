@@ -7,7 +7,7 @@ import androidx.compose.ui.unit.DpOffset
 
 @Suppress("ModifierParameter")
 @Composable
-actual fun DropdownMenuEx(
+internal actual fun DropdownMenuEx(
     expanded: Boolean,
     onDismissRequest: () -> Unit,
     modifier: Modifier,

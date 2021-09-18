@@ -9,35 +9,33 @@ import androidx.compose.ui.graphics.Shape
 
 @Composable
 @ExperimentalMaterialApi
-actual fun AlertDialog(
-    // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
-    onDismissRequest: (() -> Unit)?,
-    confirmButton: @Composable (() -> Unit)?,
-    modifier: Modifier?,
-    dismissButton: @Composable (() -> Unit)?,
-    title: @Composable (() -> Unit)?,
+internal actual fun AlertDialogInternal(
+    onDismissRequest: (() -> Unit),
+    buttons: @Composable (() -> Unit),
+    modifier: Modifier,
+    title: (@Composable () -> Unit)?,
     text: @Composable (() -> Unit)?,
-    shape: Shape?,
-    backgroundColor: Color?,
-    contentColor: Color?
+    shape: Shape,
+    backgroundColor: Color,
+    contentColor: Color
 ) {
-    @OptIn(ExperimentalComposeUiApi::class)
-    androidx.compose.material.AlertDialog(onDismissRequest!!, confirmButton!!, modifier!!, dismissButton, title, text, shape!!, backgroundColor!!, contentColor!!)
+    //@OptIn(ExperimentalComposeUiApi::class)
+    androidx.compose.material.AlertDialog(onDismissRequest, buttons, modifier, title, text, shape, backgroundColor, contentColor)
 }
 
 @Composable
 @ExperimentalMaterialApi
-actual fun AlertDialog(
-    // FIXME: they are defined as nullable but they indeed aren't. See https://issuetracker.google.com/issues/194625542
-    onDismissRequest: (() -> Unit)?,
-    buttons: @Composable (() -> Unit)?,
-    modifier: Modifier?,
-    title: (@Composable () -> Unit)?,
+internal actual fun AlertDialogInternal2(
+    onDismissRequest: (() -> Unit),
+    confirmButton: @Composable (() -> Unit),
+    modifier: Modifier,
+    dismissButton: @Composable (() -> Unit)?,
+    title: @Composable (() -> Unit)?,
     text: @Composable (() -> Unit)?,
-    shape: Shape?,
-    backgroundColor: Color?,
-    contentColor: Color?
+    shape: Shape,
+    backgroundColor: Color,
+    contentColor: Color
 ) {
-    @OptIn(ExperimentalComposeUiApi::class)
-    androidx.compose.material.AlertDialog(onDismissRequest!!, buttons!!, modifier!!, title, text, shape!!, backgroundColor!!, contentColor!!)
+    //@OptIn(ExperimentalComposeUiApi::class)
+    androidx.compose.material.AlertDialog(onDismissRequest, confirmButton, modifier, dismissButton, title, text, shape, backgroundColor, contentColor)
 }

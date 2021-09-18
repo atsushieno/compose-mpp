@@ -8,6 +8,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import dev.atsushieno.composempp.material.AlertDialog
 
 @Composable
@@ -19,5 +20,7 @@ fun App() {
     if (dialogState)
         AlertDialog(onDismissRequest = { dialogState = false },
             confirmButton = { Button(onClick = { dialogState = false }) { Text("OK" )} },
+            modifier = Modifier,
+            title = { Text("Warning") },
             text = { Text("message") },)
 }

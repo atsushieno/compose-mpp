@@ -172,6 +172,11 @@ implementation("dev.atsushieno:compose-mpp:+") // replace with specific version
 
 The undocumented API reference is available at: https://atsushieno.github.io/compose-mpp/
 
+## Usage examples
+
+- [AlertDialog](https://github.com/atsushieno/augene-ng/blob/0e7664b5cf162ddbada647e5af2b296eed820088/augene-editor-project/common/src/commonMain/kotlin/dev/atsushieno/augene/gui/App.kt#L95)
+- [DropdownMenu](https://github.com/atsushieno/kmmk/blob/16ecf4c5c07bc9176f8ec056adcb951689bdbb26/common/src/commonMain/kotlin/dev/atsushieno/kmmk/App.kt#L84)
+
 ## License
 
 compose-mpp is available under the Apache V2 License.

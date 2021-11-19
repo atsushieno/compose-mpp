@@ -2,15 +2,15 @@ import org.jetbrains.compose.compose
 
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version "1.0.0-alpha3"
+    id("org.jetbrains.compose") version "1.0.0-beta3"
     id("com.android.library")
-    id("org.jetbrains.dokka") version "1.5.0"
+    id("org.jetbrains.dokka") version "1.5.30"
     id("maven-publish")
     id("signing")
 }
 
 group = "dev.atsushieno"
-version = "0.1.1"
+version = "0.1.2"
 
 kotlin {
     android {

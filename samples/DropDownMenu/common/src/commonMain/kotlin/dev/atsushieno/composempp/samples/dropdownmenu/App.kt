@@ -1,4 +1,4 @@
-package dev.atsushieno.common
+package dev.atsushieno.composempp.samples.dropdownmenu
 
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column

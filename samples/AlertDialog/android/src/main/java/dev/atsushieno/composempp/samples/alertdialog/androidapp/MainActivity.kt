@@ -1,6 +1,6 @@
 package dev.atsushieno.composempp.samples.alertdialog.androidapp
 
-import dev.atsushieno.common.App
+import dev.atsushieno.composempp.samples.alertdialog.App
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity

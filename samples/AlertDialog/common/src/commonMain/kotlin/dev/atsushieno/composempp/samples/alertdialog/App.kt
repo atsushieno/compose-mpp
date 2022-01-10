@@ -1,4 +1,4 @@
-package dev.atsushieno.common
+package dev.atsushieno.composempp.samples.alertdialog
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.Text

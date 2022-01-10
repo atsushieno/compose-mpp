@@ -1,4 +1,4 @@
-package dev.atsushieno.common
+package dev.atsushieno.composempp.samples.alertdialog
 
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.runtime.Composable

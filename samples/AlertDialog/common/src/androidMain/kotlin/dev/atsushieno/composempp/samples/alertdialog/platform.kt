@@ -1,4 +1,4 @@
-package dev.atsushieno.common
+package dev.atsushieno.composempp.samples.alertdialog
 
 actual fun getPlatformName(): String {
     return "Android"

@@ -4,9 +4,15 @@ buildscript {
         google()
         mavenCentral()
     }
+
+
+    val composeVersion: String by project
+    val kotlinVersion: String by project
+
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
-        classpath("com.android.tools.build:gradle:7.0.3")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("org.jetbrains.compose:compose-gradle-plugin:$composeVersion")
+        classpath("com.android.tools.build:gradle:7.0.4")
     }
 }
 

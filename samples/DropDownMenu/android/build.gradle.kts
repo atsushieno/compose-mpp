@@ -8,7 +8,7 @@ group = "dev.atsushieno"
 version = "1.0"
 
 dependencies {
-    implementation(project(":samples:AlertDialog:common"))
+    implementation(project(":samples:DropDownMenu:common"))
     implementation("androidx.activity:activity-compose:1.4.0")
 }
 

@@ -18,7 +18,7 @@ kotlin {
     sourceSets {
         val jvmMain by getting {
             dependencies {
-                implementation(project(":samples:AlertDialog:common"))
+                implementation(project(":samples:DropDownMenu:common"))
                 implementation(compose.desktop.currentOs)
             }
         }
